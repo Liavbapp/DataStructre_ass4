@@ -16,9 +16,8 @@ public class Runner {
 		
 		//Create the btree using the t value and the path to the friends file.
 		BTree btree = createTree(args[0]);
-		int a= 7;
 
-
+int a=8;
 		/*
 
 		//Get the BFS representation of the btree
