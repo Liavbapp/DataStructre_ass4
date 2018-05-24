@@ -17,6 +17,9 @@ public class Runner {
 		//Create the btree using the t value and the path to the friends file.
 		BTree btree = createTree(args[0]);
 
+
+		/*
+
 		//Get the BFS representation of the btree
 		String treeLayout = btree.toString();
 		
@@ -34,9 +37,12 @@ public class Runner {
 		
 		//create a file with the program's expected output
 		createOutputFile(treeLayout, spamMessages, System.getProperty("user.dir")+"/output.txt");
+
+		*/
 			    
 	}
 
+	/*
 
 	// Create a Messages object based on the messages file.
 	// Creates a Messages object and updates its' Message array using the messages file.
@@ -46,7 +52,7 @@ public class Runner {
 		return messages;
 	}
 
-
+	*/
 
 	// Creates BTree using the t value, and the friends file.
 	// Inserts the friends into the tree.

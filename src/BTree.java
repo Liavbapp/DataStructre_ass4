@@ -1,3 +1,8 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class BTree {
 
     private BTreeNode _root;
@@ -33,4 +38,28 @@ public class BTree {
         return 2*tValue-1==_root.get_keysNumber();
     }
 
+    public void createFullTree(String friendsPath) {
+        String line="";
+        BufferedReader br = null;
+        try {
+            br = new BufferedReader(new FileReader(friendsPath));
+            while ((line = br.readLine()) != null) {
+               this.insert(line);
+            }
+        }
+        catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+    }
 }

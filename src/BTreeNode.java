@@ -30,7 +30,7 @@ public class BTreeNode {
         z.set_keysNumber(_tval - 1);
 
 //      // moving children's list one step right to add new pointer to child 'z'
-        for (int j = _keysNumber + 1; j <= childIndex + 1; j = j - 1) this.setChildToArr(j, this.getChildsArr()[j - 1]);
+        for (int j = _keysNumber +1; j <= childIndex +1; j = j - 1) this.setChildToArr(j, this.getChildsArr()[j - 1]);
         childsArr[childIndex+1]=z;
 
         //moving keys one step right to add the key from node below , using one more cell of the array
