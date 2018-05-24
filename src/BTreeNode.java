@@ -18,23 +18,23 @@ public class BTreeNode {
     public void splitChild(int childIndex) {
 
         BTreeNode y = childsArr[childIndex];
-        BTreeNode z = new BTreeNode(_tval - 1, y.is_isLeaf());
+        BTreeNode z = new BTreeNode(_tval, y.is_isLeaf());
         //add keys to 'z' from key 't' to key '2t-1' (t-1 is the middle key)
-        for (int j = 0; j < _tval - 1; j = j + 1) z.setKeyToArr(j, this.keyArr[j + _tval]);
+        for (int j = 0; j < _tval - 1; j = j + 1) z.setKeyToArr(j, y.getKeyArr()[j+_tval]);
         //add child to 'z'
         if (!z.is_isLeaf()) {
-            for (int j = 0; j < _tval; j = j + 1) z.setChildToArr(j, this.childsArr[j + _tval]);
+            for (int j = 0; j < _tval; j = j + 1) z.setChildToArr(j, y.getChildsArr()[j+_tval]);
         }
         //updating keys number of 'z' and 'y'
         y.set_keysNumber(_tval - 1);
         z.set_keysNumber(_tval - 1);
 
 //      // moving children's list one step right to add new pointer to child 'z'
-        for (int j = _keysNumber +1; j <= childIndex +1; j = j - 1) this.setChildToArr(j, this.getChildsArr()[j - 1]);
+        for (int j = _keysNumber+1 ; j <= childIndex +1; j = j - 1)   {this.setChildToArr(j+1, this.getChildsArr()[j]);}
         childsArr[childIndex+1]=z;
 
         //moving keys one step right to add the key from node below , using one more cell of the array
-        for (int j = this._keysNumber; j <= childIndex + 1; j = j - 1) this.setKeyToArr(j, keyArr[j - 1]);
+        for (int j = _keysNumber; j <= childIndex + 1; j = j - 1) this.setKeyToArr(j, keyArr[j - 1]);
 
         //set the middle key from below to this node (from 'y' list)
         this.setKeyToArr(childIndex, y.getKeyArr()[_tval - 1]);
@@ -50,7 +50,7 @@ public class BTreeNode {
             int i = _keysNumber - 1;
 
             if (_isLeaf) {
-                while (i >= 0 && keyArr[i].compareTo((key)) < 0) {
+                while (i >= 0 && keyArr[i].compareTo((key)) > 0) {
                     keyArr[i+1]=keyArr[i];
                     i--;
                 }
@@ -60,7 +60,7 @@ public class BTreeNode {
             } else { //the node isn't a leaf
 
                 //finds the child which will contain the new key
-                while (i >= 0 && (keyArr[i]).compareTo((key)) < 0)
+                while (i >= 0 && (keyArr[i]).compareTo((key)) > 0)
                     i--;
 
                 i = i + 1;
@@ -70,7 +70,7 @@ public class BTreeNode {
 
                     //full indeed, split it please
                     childsArr[i].splitChild(i);
-                    if ((keyArr[i]).compareTo((key)) > 0)
+                    if ((keyArr[i]).compareTo((key)) < 0)
                         i++;
                 }
                 childsArr[i].insertNonFull(key);
