@@ -1,27 +1,27 @@
-public class BTree <T> {
+public class BTree {
 
-    private BTreeNode<T> _root;
+    private BTreeNode _root;
     Integer tValue;
 
     public BTree(String val) {
         this.tValue = Integer.valueOf(val);
-        this._root = new BTreeNode<>(tValue, true);
+        this._root = new BTreeNode(tValue, true);
     }
 
-    public void insert(T key) {
-        BTreeNode<T> tempRoot = _root;
+    public void insert(String key) {
+        BTreeNode tempRoot = _root;
         if (isFull()) {
-            BTreeNode<T> s = new BTreeNode<>(tValue, false);
+            BTreeNode s = new BTreeNode(tValue, false);
             _root = s;
             s.set_keysNumber(0);
-            s.addChilds(0, tempRoot);
+            s.getChildsArr()[0]=tempRoot;
             s.splitChild(0);
             tempRoot = s;
         }
         tempRoot.insertNonFull(key);
     }
 
-    public boolean search(T key) {
+    public boolean search(String key) {
         if (_root == null) //empty tree
             return false; //not found
         else
