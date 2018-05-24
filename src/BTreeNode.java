@@ -17,7 +17,7 @@ public class BTreeNode {
 
     public void splitChild(int childIndex) {
 
-        BTreeNode y = childsArr[childIndex];
+        BTreeNode y = getChildsArr()[childIndex];
         BTreeNode z = new BTreeNode(_tval, y.is_isLeaf());
         //add keys to 'z' from key 't' to key '2t-1' (t-1 is the middle key)
         for (int j = 0; j < _tval - 1; j = j + 1) z.setKeyToArr(j, y.getKeyArr()[j+_tval]);
@@ -30,11 +30,11 @@ public class BTreeNode {
         z.set_keysNumber(_tval - 1);
 
 //      // moving children's list one step right to add new pointer to child 'z'
-        for (int j = _keysNumber+1 ; j <= childIndex +1; j = j - 1)   {this.setChildToArr(j+1, this.getChildsArr()[j]);}
+        for (int j = _keysNumber; j >= childIndex +1; j = j - 1)   {this.setChildToArr(j+1, this.getChildsArr()[j]);}
         childsArr[childIndex+1]=z;
 
         //moving keys one step right to add the key from node below , using one more cell of the array
-        for (int j = _keysNumber; j <= childIndex + 1; j = j - 1) this.setKeyToArr(j, keyArr[j - 1]);
+        for (int j = _keysNumber-1; j >= childIndex; j = j - 1) this.setKeyToArr(j+1, keyArr[j]);
 
         //set the middle key from below to this node (from 'y' list)
         this.setKeyToArr(childIndex, y.getKeyArr()[_tval - 1]);
@@ -69,7 +69,7 @@ public class BTreeNode {
                 if (childsArr[i].get_keysNumber() == 2 * _tval - 1) {
 
                     //full indeed, split it please
-                    childsArr[i].splitChild(i);
+                    splitChild(i);
                     if ((keyArr[i]).compareTo((key)) < 0)
                         i++;
                 }
