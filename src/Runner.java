@@ -17,14 +17,17 @@ public class Runner {
 		//Create the btree using the t value and the path to the friends file.
 		BTree btree = createTree(args[0]);
 
-int a=8;
+		// Create a Messages object based on the messages file.
+		Messages messages = createArrayOfMessages();
+		// Create a Messages object based on the messages file.
+		// Creates a Messages object and updates its' Message array using the messages file.
+
 		/*
 
 		//Get the BFS representation of the btree
 		String treeLayout = btree.toString();
 		
-		// Create a Messages object based on the messages file.
-		Messages messages = createArrayOfMessages();
+
 
 		//For each message, create a hash table based on the words in the message.
 		messages.createHashTables(args[1]);
@@ -44,13 +47,7 @@ int a=8;
 
 	/*
 
-	// Create a Messages object based on the messages file.
-	// Creates a Messages object and updates its' Message array using the messages file.
-	private static Messages createArrayOfMessages() {
-		Messages messages = new Messages();
-		messages.generateMessages(System.getProperty("user.dir")+"/messages.txt");
-		return messages;
-	}
+
 
 	*/
 
@@ -62,7 +59,11 @@ int a=8;
 		return btree;
 	}
 
-
+	private static Messages createArrayOfMessages() {
+		Messages messages = new Messages();
+		messages.generateMessages(System.getProperty("user.dir")+"/messages.txt");
+		return messages;
+	}
 	//Creates a file with the program's expected output
 	private static void createOutputFile(String treeLayout, String spamMessages, String pathToOutput) {
 		Path path = Paths.get(pathToOutput);
