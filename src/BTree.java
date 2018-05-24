@@ -8,6 +8,7 @@ public class BTree {
         this._root = new BTreeNode(tValue, true);
     }
 
+
     public void insert(String key) {
         BTreeNode tempRoot = _root;
         if (isFull()) {
@@ -20,6 +21,7 @@ public class BTree {
         }
         tempRoot.insertNonFull(key);
     }
+
 
     public boolean search(String key) {
         if (_root == null) //empty tree
