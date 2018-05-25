@@ -19,7 +19,6 @@ public class Runner {
 
 		// Create a Messages object based on the messages file.
 		Messages messages = createArrayOfMessages();
-		int a=8;
 		// Create a Messages object based on the messages file.
 		// Creates a Messages object and updates its' Message array using the messages file.
 
