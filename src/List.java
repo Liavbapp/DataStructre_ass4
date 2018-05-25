@@ -4,7 +4,7 @@ public interface List <T> {
         public int size();
         
         //Appends the specified element to the end of this list
-        public void add(T element);
+        public boolean add(T element);
         
         //Inserts the specified element at the specified position in this list
         public void add(int index, T element);
@@ -14,6 +14,9 @@ public interface List <T> {
         
         //Returns the element at the specified position in this list.
         public T get(int index);
+
+        //Removes the first item in the list
+        public LinkedList.Link<T> remove();
         
         //Removes the first occurrence of the specified element from this list, if it is present
         public boolean remove(T element);

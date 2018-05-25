@@ -89,6 +89,51 @@ public class BTreeNode {
                 return childsArr[i].search(key);
         }
 
+    public String toString(){
+        String acc="";
+        Queue<Object> q = new QueueAsLinkedList<>();
+        q.enqueue(this);
+        q.enqueue("#");
+        return accToString(q,acc);
+    }
+
+    private String accToString(Queue<Object> q, String acc) {
+        boolean diaz = false;
+        while (!q.isEmpty()) {
+            if (q.peek() instanceof BTreeNode) {
+                BTreeNode curr = (((BTreeNode) q.dequeue()));
+                acc += printOnlyThisNode(curr);
+
+                if (q.peek().equals("#")) diaz = true;
+
+                if (curr.childsArr[0] != null) {
+                    for (int i = 0; i <= curr._keysNumber; i++) {
+                        q.enqueue(curr.getChildsArr()[i]);
+                        q.enqueue("|"); }
+
+                    if (diaz) q.enqueue("#");
+
+                    else {q.enqueue("^");}
+                }
+            }
+            if (!q.isEmpty() && q.peek() instanceof String) {
+                if ((q.peek().equals("#") | q.peek().equals("^")) & acc.endsWith("|")) {
+                    acc=acc.substring(0,acc.length()-1);
+                }
+                acc += ((String) q.dequeue());
+            }
+            return accToString(q,acc); }
+        return acc.substring(0,acc.length()-1);
+    }
+
+    private String printOnlyThisNode(BTreeNode toPrint) {
+        String st="";
+        for(int i=0;i<toPrint._keysNumber;i++)
+            st+=toPrint.keyArr[i]+",";
+        st=st.substring(0,st.length()-1);
+        return st;
+    }
+
 
 
         public String[] getKeyArr() { return keyArr; }
