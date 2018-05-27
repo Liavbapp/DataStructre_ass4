@@ -1,3 +1,5 @@
+
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -60,6 +62,14 @@ public class BTree {
                 }
             }
         }
+
+    }
+
+    public String toString(){
+        if(_root.get_keysNumber()==0) //empty tree, no friends
+            return "";
+        else
+            return _root.toString();
 
     }
 }

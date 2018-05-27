@@ -1,7 +1,6 @@
-import java.util.Iterator;
+
 
     public class MessageListIterator implements Iterator<Message> {
-
 
      Messages messageList;
      int i;

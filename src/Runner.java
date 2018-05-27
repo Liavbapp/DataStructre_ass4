@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Hashtable;
 
 public class Runner {
 
@@ -16,18 +17,17 @@ public class Runner {
 		
 		//Create the btree using the t value and the path to the friends file.
 		BTree btree = createTree(args[0]);
+		//Get the BFS representation of the btree
+		String treeLayout = btree.toString();
+
+		System.out.println(treeLayout);
 
 		// Create a Messages object based on the messages file.
 		Messages messages = createArrayOfMessages();
-		// Create a Messages object based on the messages file.
+
 		// Creates a Messages object and updates its' Message array using the messages file.
 
 		/*
-
-		//Get the BFS representation of the btree
-		String treeLayout = btree.toString();
-		
-
 
 		//For each message, create a hash table based on the words in the message.
 		messages.createHashTables(args[1]);
@@ -41,15 +41,11 @@ public class Runner {
 		//create a file with the program's expected output
 		createOutputFile(treeLayout, spamMessages, System.getProperty("user.dir")+"/output.txt");
 
-		*/
+	*/
 			    
 	}
 
-	/*
 
-
-
-	*/
 
 	// Creates BTree using the t value, and the friends file.
 	// Inserts the friends into the tree.
@@ -64,6 +60,9 @@ public class Runner {
 		messages.generateMessages(System.getProperty("user.dir")+"/messages.txt");
 		return messages;
 	}
+
+	/*
+
 	//Creates a file with the program's expected output
 	private static void createOutputFile(String treeLayout, String spamMessages, String pathToOutput) {
 		Path path = Paths.get(pathToOutput);
@@ -76,6 +75,8 @@ public class Runner {
 			e.printStackTrace();
 		}
 	}
+
+	*/
 
 
 }
