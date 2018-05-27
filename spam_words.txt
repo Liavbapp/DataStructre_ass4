@@ -1,6 +1,2 @@
 loan 2
 credit 1
-chen 4
-hello 5
-test 6
-hiiiii 1
