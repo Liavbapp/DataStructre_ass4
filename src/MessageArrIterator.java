@@ -1,11 +1,11 @@
 
 
-    public class MessageListIterator implements Iterator<Message> {
+    public class MessageArrIterator implements Iterator<Message> {
 
      Messages messageList;
      int i;
      int size;
-    public MessageListIterator(Messages message) {
+    public MessageArrIterator(Messages message) {
     messageList=message;
     i=0;
     size=messageList.size();

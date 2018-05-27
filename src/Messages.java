@@ -103,6 +103,6 @@ public class Messages  implements Iterable<Message> {
     public Message getAtIndex(int index) {return messageArr[index];}
     @Override
         public Iterator<Message> iterator() {
-      return  new MessageListIterator(this);
+      return  new MessageArrIterator(this);
     }
 }
