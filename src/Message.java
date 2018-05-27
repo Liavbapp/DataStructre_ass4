@@ -20,7 +20,7 @@ public class Message {
         return reciverName;
     }
 
-    public void setReciverName(String reciverName) {
+    public void setReceiverName(String reciverName) {
         this.reciverName = reciverName;
     }
 

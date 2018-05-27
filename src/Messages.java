@@ -26,7 +26,7 @@ public class Messages  implements Iterable<Message> {
                         line=br.readLine();
                     }
                     else if(getlineType(line)==2) {
-                        messageObject.setReciverName(line.substring(3));
+                        messageObject.setReceiverName(line.substring(3));
                         line=br.readLine();
                     }
                     else {

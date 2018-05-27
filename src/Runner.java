@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Hashtable;
 
 public class Runner {
 
@@ -16,12 +17,14 @@ public class Runner {
 		
 		//Create the btree using the t value and the path to the friends file.
 		BTree btree = createTree(args[0]);
-
 		//Get the BFS representation of the btree
 		String treeLayout = btree.toString();
 
+		System.out.println(treeLayout);
+
 		// Create a Messages object based on the messages file.
 		Messages messages = createArrayOfMessages();
+
 		// Creates a Messages object and updates its' Message array using the messages file.
 
 		/*

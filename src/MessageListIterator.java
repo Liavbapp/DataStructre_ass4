@@ -1,9 +1,9 @@
 
 public class MessageListIterator implements Iterator<Message> {
 
-     Messages messageList;
-     int i;
-     int size;
+     private Messages messageList;
+     private int i;
+     private int size;
 
     public MessageListIterator(Messages message) {
     messageList=message;
