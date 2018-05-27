@@ -6,8 +6,8 @@ import java.io.IOException;
 
 public class Messages  implements Iterable<Message> {
 
-    Message[]messageArr;
-    Message messageObject;
+    private Message[]messageArr;
+    private Message messageObject;
 
 
     public void generateMessages(String MessagesPath) {
@@ -15,6 +15,7 @@ public class Messages  implements Iterable<Message> {
         messageArr=new Message[countMessages((MessagesPath))];
         BufferedReader br = null;
         int c=0;
+
         try { br = new BufferedReader(new FileReader(MessagesPath));
             //first line is empty so we read it and move on
             br.readLine();
@@ -105,4 +106,59 @@ public class Messages  implements Iterable<Message> {
         public Iterator<Message> iterator() {
       return  new MessageArrIterator(this);
     }
+
+    public void createHashTables(String arg) {
+        int m=Integer.valueOf(arg);
+        Iterator<Message> iter=iterator();
+        while (iter.hasNext()) {
+            Message curr=iter.next();
+            HashTable table=new HashTable(m);
+            String[] messageWords=curr.splitMessageIntoWords();
+            for (String word: messageWords)
+                table.add(word);
+        curr.setHashTable(table);
+
+        }
+
+
+    }
+
+    public String findSpams(String spamPath, BTree btree) {
+        String output="";
+        int messageIndex=0;
+        boolean isFriends=false;
+        Spams spams=new Spams(spamPath);
+        Iterator<Message> iter=iterator();
+
+        while (iter.hasNext()) {
+            Message curr=iter.next();
+            int length=curr.length();
+            isFriends=btree.search(curr.getReciverName()+" & "+curr.getSenderName()) ||
+                    btree.search(curr.getSenderName()+" & "+curr.getReciverName());
+            if (!isFriends) {
+                if (isSpam(curr, spams))
+                    output += messageIndex+",";
+            }
+            messageIndex++;
+        }
+        if(output.length()>0)
+            output=output.substring(0,output.length()-1); //removing the last "," if output isn't empty
+        return output;
+    }
+
+    private boolean isSpam(Message curr, Spams spams) {
+        Iterator<Spam> spamIter=new SpamWordsIterator(spams);
+        boolean hasSpam=false;
+        int length=curr.length();
+        while (spamIter.hasNext()&&!hasSpam) {
+            Spam currSpamWord=spamIter.next();
+            if((100*((double)(curr.getTable().occurncesOfWord(currSpamWord.getWord()))/length))>currSpamWord.getThreshold()) {
+                hasSpam=true;
+            }
+        }
+
+        return hasSpam;
+    }
+
+
 }

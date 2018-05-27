@@ -1,11 +1,19 @@
 public class Message {
+
     private String senderName;
     private String reciverName;
     private String message;
+    private HashTable table;
+
+    public HashTable getTable() {
+        return table;
+    }
+
     public Message() {
-     senderName="";
-     reciverName="";
-     message="";
+     this.senderName="";
+     this.reciverName="";
+     this.message="";
+     this.table=null; //be be initiated in Messages class
     }
 
     public String getSenderName() {
@@ -24,11 +32,24 @@ public class Message {
         this.reciverName = reciverName;
     }
 
+    public String[] splitMessageIntoWords() {
+        return message.split(" ");
+    }
+
+    public int length() {
+        return this.splitMessageIntoWords().length;
+        }
+
+
     public String getMessage() {
         return message;
     }
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public void setHashTable(HashTable tableToSet) {
+        this.table=tableToSet;
     }
 }

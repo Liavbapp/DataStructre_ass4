@@ -6,7 +6,14 @@ public class HashTable {
 
     public HashTable(int m) {
         this.array=new HashList[m];
+        initArray();
         this.m=m;
+    }
+
+    private void initArray() {
+        for(int i=0;i<array.length;i++) {
+            array[i]=new HashList();
+        }
     }
 
     public void add(String wordToAdd) {

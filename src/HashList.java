@@ -3,19 +3,21 @@ public class HashList {
     private HashListElement first;
 
     public HashList() {
-        this.first=null;
+        this.first = null;
     }
 
     public void add(String word) {
-        first=new HashListElement(word,first);
+        first = new HashListElement(word, first);
     }
 
     public int occurrences(String word) {
-        int counter=0;
-        HashListElement curr=first;
+        int counter = 0;
+        HashListElement curr = first;
         while (curr != null) {
-            if(curr.getData().equals(word)) counter++;
+            if (curr.getData().equals(word)) counter++;
+            curr = curr.getNext();
         }
         return counter;
     }
+
 }
