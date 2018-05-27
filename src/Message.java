@@ -36,6 +36,10 @@ public class Message {
         return message.split(" ");
     }
 
+    public int length() {
+        return this.splitMessageIntoWords().length;
+        }
+
 
     public String getMessage() {
         return message;

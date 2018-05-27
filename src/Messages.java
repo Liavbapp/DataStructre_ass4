@@ -131,8 +131,8 @@ public class Messages  implements Iterable<Message> {
         Iterator<Message> iter=iterator();
 
         while (iter.hasNext()) {
-
             Message curr=iter.next();
+            int length=curr.length();
             isFriends=btree.search(curr.getReciverName()+" & "+curr.getSenderName()) ||
                     btree.search(curr.getSenderName()+" & "+curr.getReciverName());
             if (!isFriends) {
@@ -141,16 +141,18 @@ public class Messages  implements Iterable<Message> {
             }
             messageIndex++;
         }
-        return output.substring(0,output.length()-1);
+        if(output.length()>0)
+            output=output.substring(0,output.length()-1); //removing the last "," if output isn't empty
+        return output;
     }
 
     private boolean isSpam(Message curr, Spams spams) {
         Iterator<Spam> spamIter=new SpamWordsIterator(spams);
         boolean hasSpam=false;
+        int length=curr.length();
         while (spamIter.hasNext()&&!hasSpam) {
-            Spam next=spamIter.next();
-            System.out.println("occu of: "+ next.getWord()+ " in: " +curr.getSenderName()+ " to "+ curr.getReciverName()+ ": "+curr.getTable().occurncesOfWord(next.getWord()));
-            if(curr.getTable().occurncesOfWord(next.getWord())>next.getThreshold()) {
+            Spam currSpamWord=spamIter.next();
+            if((100*((double)(curr.getTable().occurncesOfWord(currSpamWord.getWord()))/length))>currSpamWord.getThreshold()) {
                 hasSpam=true;
             }
         }
