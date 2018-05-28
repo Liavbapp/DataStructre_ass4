@@ -19,7 +19,8 @@ public class Messages  implements Iterable<Message> {
         try { br = new BufferedReader(new FileReader(MessagesPath));
             //first line is empty so we read it and move on
             br.readLine();
-            while ((line = br.readLine()) != null) { messageObject = new Message();
+            while ((line = br.readLine()) != null) {
+                messageObject = new Message();
                 while (line != null && !line.equals("#")) {
                     if (getlineType(line) == 1) {
                         messageObject.setSenderName(line.substring(5));
@@ -126,13 +127,12 @@ public class Messages  implements Iterable<Message> {
     public String findSpams(String spamPath, BTree btree) {
         String output="";
         int messageIndex=0;
-        boolean isFriends=false;
+        boolean isFriends;
         Spams spams=new Spams(spamPath);
         Iterator<Message> iter=iterator();
 
         while (iter.hasNext()) {
             Message curr=iter.next();
-            int length=curr.length();
             isFriends=btree.search(curr.getReciverName()+" & "+curr.getSenderName()) ||
                     btree.search(curr.getSenderName()+" & "+curr.getReciverName());
             if (!isFriends) {

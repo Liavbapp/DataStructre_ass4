@@ -81,7 +81,7 @@ public class BTreeNode {
             int i = 0;
             while (i < _keysNumber && (keyArr[i]).compareTo((key)) < 0)
                 i++;
-            if ( (key).equals(( keyArr[i]))) //found
+            if (i<keyArr.length&&(key).equals(( keyArr[i]))) //found
                 return true;
             if (_isLeaf) //no children to search in
                 return false;
