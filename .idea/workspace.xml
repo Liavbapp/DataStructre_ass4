@@ -2,44 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="192a7d41-6294-4329-a953-ab4e2549b6ee" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructre_ass4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructre_ass4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/friends.txt" beforeDir="false" afterPath="$PROJECT_DIR$/friends.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messages.txt" beforeDir="false" afterPath="$PROJECT_DIR$/messages.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/BTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/BTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/BTreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/BTreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/HashList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/HashList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/HashListElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/HashListElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/HashTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/HashTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/Iterable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/Iterable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/Iterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/Iterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/LinkedList$Link.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/LinkedList$Link.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/LinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/List.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/List.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/MessageArrIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/MessageArrIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/MessageListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/Messages.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/Messages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/OrderedPair.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/OrderedPair.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/Queue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/QueueAsLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/QueueAsLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/Spam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/Spam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/SpamWordsIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/SpamWordsIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructre_ass4/Spams.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructre_ass4/Spams.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spam_words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spam_words.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BTreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashListElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashListElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Spam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spam.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,8 +29,8 @@
       <file leaf-file-name="BTreeNode.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BTreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="85" column="33" lean-forward="true" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+            <state relative-caret-position="170">
+              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
             </state>
           </provider>
         </entry>
@@ -75,7 +38,7 @@
       <file leaf-file-name="BTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="561">
               <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -87,7 +50,7 @@
       <file leaf-file-name="Messages.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Messages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
+            <state relative-caret-position="2210">
               <caret line="135" selection-start-line="135" selection-end-line="135" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -99,7 +62,7 @@
       <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-381">
+            <state relative-caret-position="493">
               <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
@@ -108,7 +71,7 @@
       <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state relative-caret-position="459">
               <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="e#177#178#0" expanded="true" />
@@ -159,7 +122,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
+    <option name="x" value="1910" />
     <option name="y" value="410" />
     <option name="width" value="1945" />
     <option name="height" value="1105" />
@@ -173,6 +136,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -190,7 +154,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,33 +313,38 @@
       <option name="project" value="LOCAL" />
       <updated>1527413724431</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2 almost completed">
+      <created>1527524461363</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1527524461363</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="877" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32915717" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3499327" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3499327" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1602951" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16230717" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24973147" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.37585422" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37585422" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -384,6 +352,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32915717" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -408,6 +377,43 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Messages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2210">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BTreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="85" column="33" lean-forward="true" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MessageArrIterator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -449,6 +455,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="imports" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -478,6 +487,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="e#129#130#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -623,6 +635,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -665,6 +680,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#129#130#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -672,6 +690,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -699,7 +721,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="459">
           <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#177#178#0" expanded="true" />
@@ -719,7 +741,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="561">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -729,7 +751,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Messages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
+        <state relative-caret-position="2210">
           <caret line="135" selection-start-line="135" selection-end-line="135" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -739,15 +761,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-381">
+        <state relative-caret-position="493">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BTreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="85" column="33" lean-forward="true" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+        <state relative-caret-position="170">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
         </state>
       </provider>
     </entry>
