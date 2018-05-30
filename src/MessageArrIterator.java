@@ -20,6 +20,6 @@
     public Message next() {
         i=i+1;
         return messageArr.getAtIndex(i-1);
-
+//liav
     }
 }
